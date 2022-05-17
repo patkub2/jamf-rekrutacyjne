@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,aAAa;EAAE,gBAAgB;CACxC",
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,MAAM,EAAE,aAAa;EAAE,gBAAgB;CACxC",
     "sources": [
         "AddProductForm.scss"
     ],

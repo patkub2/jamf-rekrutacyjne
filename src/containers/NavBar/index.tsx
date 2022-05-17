@@ -24,17 +24,16 @@ function NavBar() {
       >
         <AddProductForm />
       </Menu>
-      <div className="container">
-        <div className="navbar">
-          <img src={jamflogo} alt="jamflogo" />
-          <button
-            className="button"
-            type="button"
-            onClick={() => setMenuOpenState(true)}
-          >
-            Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
-          </button>
-        </div>
+
+      <div className="navbar">
+        <img src={jamflogo} alt="jamflogo" />
+        <button
+          className="button"
+          type="button"
+          onClick={() => setMenuOpenState(true)}
+        >
+          Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
+        </button>
       </div>
     </>
   );

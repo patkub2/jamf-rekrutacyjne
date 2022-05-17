@@ -6,7 +6,7 @@ import "./styles.css";
 
 function Main() {
   return (
-    <div className="main-container">
+    <div className="container">
       <NavBar />
     </div>
   );
