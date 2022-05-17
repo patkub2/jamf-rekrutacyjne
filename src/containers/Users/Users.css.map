@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,aAAa;EAAE,gBAAgB;CACxC",
     "sources": [
-        "styles.scss"
+        "Users.scss"
     ],
     "names": [],
-    "file": "styles.css"
+    "file": "Users.css"
 }

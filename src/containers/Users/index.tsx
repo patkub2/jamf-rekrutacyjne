@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { State } from "../../redux/Products";
 import Product from "../../components/Product";
-import "./styles.css";
+import "./Users.css";
 
 function Users() {
   const products = useSelector<State, State[]>((state) => state.products.value);

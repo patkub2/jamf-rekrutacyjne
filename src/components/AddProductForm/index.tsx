@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "./AddProductForm.css";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../redux/Products";
 

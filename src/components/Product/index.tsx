@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./product.css";
 
 type Props = {
   name: string;
@@ -13,7 +13,7 @@ function Product(props: Props) {
     <div>
       <h1> {name}</h1>
       <h1> {price}</h1>
-      <img src={img} alt={name} />
+      <img className="img" src={img} alt={name} />
     </div>
   );
 }

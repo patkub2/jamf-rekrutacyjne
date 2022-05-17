@@ -1,25 +1,43 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React from "react";
+import React, { useState } from "react";
+import { slide as Menu } from "react-burger-menu";
+import AddProductForm from "../../components/AddProductForm";
 
-import "./styles.css";
+import "./NavBar.css";
+import jamflogo from "../../assets/jamf-logo.png";
+import plusicon from "../../assets/plusicon.png";
 
-function Navbar() {
+function NavBar() {
+  const [menuOpenState, setMenuOpenState] = useState(false);
+
+  // const Close = () => setMenuOpenState(false);
+
   return (
-    <div className="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label className="menu__btn" htmlFor="menu__toggle">
-        <span />
-      </label>
-
-      <ul className="menu__box">
-        <li>Home</li>
-        <li>About</li>
-        <li>Team</li>
-        <li>Contact</li>
-        <li>Twitter</li>
-      </ul>
-    </div>
+    <>
+      <Menu
+        noOverlay
+        right
+        width="40%"
+        isOpen={menuOpenState}
+        onOpen={() => setMenuOpenState(true)}
+        onClose={() => setMenuOpenState(false)}
+        customBurgerIcon={false}
+      >
+        <AddProductForm />
+      </Menu>
+      <div className="container">
+        <div className="navbar">
+          <img src={jamflogo} alt="jamflogo" />
+          <button
+            className="button"
+            type="button"
+            onClick={() => setMenuOpenState(true)}
+          >
+            Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 
-export default Navbar;
+export default NavBar;
