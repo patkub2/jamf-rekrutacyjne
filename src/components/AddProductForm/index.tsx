@@ -12,30 +12,31 @@ function AddProductForm() {
   const [img, setImg] = useState("");
 
   function clear() {
-    dispatch(
-      addProduct({
-        name,
-        price,
-        img,
-      })
-    );
-    setName("");
-    setPrice("");
-    setImg("");
-    dispatch(increment(false));
+    if (img.includes("https://") === true && name !== "" && price !== "") {
+      dispatch(
+        addProduct({
+          name,
+          price,
+          img,
+        })
+      );
+      setName("");
+      setPrice("");
+      setImg("");
+      dispatch(increment(false));
+    }
   }
 
   return (
-    <div className="form__container">
-      <div className="form__title">Dodawanie produktu</div>
+    <section className="form__container">
+      <span className="title">Dodawanie produktu</span>
 
-      <div className="form__element">
+      <div className="element">
         <span>Nazwa produktu</span>
         <span className="required">Pole wymagane</span>
 
         <input
           required
-          className="form__input"
           type="text"
           value={name}
           onChange={(event) => {
@@ -43,13 +44,12 @@ function AddProductForm() {
           }}
         />
       </div>
-      <div className="form__element">
+      <div className="element">
         <span>Cena produktu</span>
         <span className="required">Pole wymagane</span>
 
         <input
           required
-          className="form__input"
           type="number"
           value={price}
           onChange={(event) => {
@@ -57,13 +57,12 @@ function AddProductForm() {
           }}
         />
       </div>
-      <div className="form__element">
+      <div className="element">
         <span>Adres URL obrazka</span>
         <span className="required">Pole wymagane</span>
 
         <input
           required
-          className="form__input"
           type="url"
           value={img}
           onChange={(event) => {
@@ -71,11 +70,11 @@ function AddProductForm() {
           }}
         />
       </div>
-      <button className="form__button" type="button" onClick={clear}>
+      <button className="button" type="button" onClick={clear}>
         {" "}
         Dodaj produkt
       </button>
-    </div>
+    </section>
   );
 }
 

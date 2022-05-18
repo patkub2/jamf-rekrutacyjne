@@ -1,13 +1,16 @@
 .product__container {
   margin: 5px;
+  font-size: 1.3rem;
 }
 
 .product__container .img {
   margin-top: 50px;
-  width: 15vw;
-  height: 15vw;
+  width: 16vw;
+  height: 16vw;
   max-width: 280px;
   max-height: 280px;
+  min-width: 150px;
+  min-height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -15,14 +18,10 @@
 .product__container .price {
   margin: 0;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .product__container .name {
   margin: 5px 0;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
 }
 /*# sourceMappingURL=product.css.map */

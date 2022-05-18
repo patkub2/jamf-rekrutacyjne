@@ -1,49 +1,36 @@
+@import "../../scss/abstracts/index";
+
 .form__container {
-  //border: 1px solid red;
-  /* BORDER TEST*/
   display: flex;
-  color: #000000;
+  color: $text;
   flex-direction: row;
   flex-wrap: wrap;
   width: 500px;
-}
-.form__input {
-  background: #ffffff;
-  border: 1px solid #888888;
-  width: 100%;
-  height: 56px;
-}
-
-.form__title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 28px;
-  color: #000000;
-}
-.form__element {
-  font-size: 16px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  //border: 1px solid blue;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 20px 0;
-  .required {
-    color: #a5a5a5;
-    font-size: 14px;
+  input {
+    background: $background;
+    border: 1px solid $border;
+    width: 100%;
+    height: 56px;
   }
-}
-.form__button {
-  padding: 12px 20px;
-  background-color: #c4c4c4;
-  border: 0px;
-  width: auto;
-  font: inherit;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
+
+  .title {
+    font-weight: $bold;
+    font-size: 32px;
+    line-height: 28px;
+    color: $text;
+  }
+  .element {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    .required {
+      color: $light;
+      font-size: 14px;
+    }
+  }
 }

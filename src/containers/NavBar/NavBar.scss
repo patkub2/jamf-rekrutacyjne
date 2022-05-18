@@ -1,22 +1,21 @@
+@import "../../scss/abstracts/index";
+
 .navbar {
   height: 110px;
-  //border: 1px solid blue; /* BORDER TEST*/
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-}
-
-.button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // border: 1px solid red; /* BORDER TEST*/
+  .button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

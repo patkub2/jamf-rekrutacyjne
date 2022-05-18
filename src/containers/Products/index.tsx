@@ -8,7 +8,7 @@ function Products() {
   const products = useSelector<State, State[]>((state) => state.products.value);
 
   return (
-    <div className="displayProducts">
+    <section className="displayProducts">
       {products.map((product) => {
         return (
           <Product
@@ -19,7 +19,7 @@ function Products() {
           />
         );
       })}
-    </div>
+    </section>
   );
 }
 export default Products;

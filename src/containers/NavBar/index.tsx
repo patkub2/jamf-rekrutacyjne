@@ -13,7 +13,7 @@ function NavBar() {
   // const Close = () => setMenuOpenState(false);
 
   return (
-    <div className="navbar">
+    <section className="navbar">
       <img src={jamflogo} alt="jamflogo" />
       <button
         className="button"
@@ -22,7 +22,7 @@ function NavBar() {
       >
         Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
       </button>
-    </div>
+    </section>
   );
 }
 

@@ -8,7 +8,7 @@ import "./MainContent.css";
 function MainContent() {
   const dispatch = useDispatch();
   return (
-    <div className="main__container">
+    <section className="main__container">
       <div className="welcome">
         <h1>Zadanie rekrutacyjne na staż w Jamf</h1>
         <div className="card">
@@ -18,7 +18,7 @@ function MainContent() {
             Powodzenia!
           </p>
           <button
-            className="form__button"
+            className="button"
             type="button"
             onClick={() => dispatch(increment(true))}
           >
@@ -30,7 +30,7 @@ function MainContent() {
 
       <div className="apple">Urządzenia Apple</div>
       <Products />
-    </div>
+    </section>
   );
 }
 

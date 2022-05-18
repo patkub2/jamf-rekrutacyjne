@@ -3,11 +3,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
+  background-color: #fff;
   width: 80vw;
   margin: 0 10vw;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: #c4c4c4;
+  border: 0px;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+h1 {
+  margin: 100px 0px;
+  font-family: "Antonio";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 72px;
+  letter-spacing: -0.02em;
 }
 /*# sourceMappingURL=styles.css.map */

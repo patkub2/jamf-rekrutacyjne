@@ -1,26 +1,25 @@
+@import "../../scss/abstracts/index";
+
 .product__container {
-  // border: 1px solid red; /* BORDER TEST*/
   margin: 5px;
+  font-size: $medium;
+
   .img {
     margin-top: 50px;
-    width: 15vw;
-    height: 15vw;
+    width: 16vw;
+    height: 16vw;
     max-width: 280px;
     max-height: 280px;
+    min-width: 150px;
+    min-height: 150px;
     object-fit: cover;
   }
   .price {
-    // border: 1px solid green; /* BORDER TEST*/
     margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: $bold;
   }
   .name {
-    // border: 1px solid pink; /* BORDER TEST*/
     margin: 5px 0;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: $normal;
   }
 }

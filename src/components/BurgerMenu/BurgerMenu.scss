@@ -1,3 +1,5 @@
+@import "../../scss/abstracts/index";
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -34,12 +36,13 @@
   */
 .bm-menu-wrap {
   position: fixed;
+
   height: 100%;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #ffffff;
+  background: $background;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);

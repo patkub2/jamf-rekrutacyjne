@@ -1,11 +1,31 @@
+@import "../scss/abstracts/index";
+
 .container {
-  font-family: "Open Sans", sans-serif;
+  font-family: $second;
   display: flex;
   // border: 1px solid green; /* BORDER TEST*/
-  background-color: white;
+  background-color: $background;
   //padding: 0 100px;
   width: 80vw;
   margin: 0 10vw;
   display: flex;
   flex-wrap: wrap;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: $font;
+  border: 0px;
+  font: inherit;
+  cursor: pointer;
+  font-weight: $bold;
+  font-size: $small;
+}
+h1 {
+  margin: 100px 0px;
+  font-family: $main;
+  font-weight: $bold;
+  font-size: $title;
+  line-height: 72px;
+  letter-spacing: -0.02em;
 }
