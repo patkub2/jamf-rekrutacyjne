@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 40px;
 }
 
 .button {
@@ -99,4 +100,4 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-/*# sourceMappingURL=navbar.css.map */
+/*# sourceMappingURL=NavBar.css.map */

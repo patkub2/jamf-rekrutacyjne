@@ -3,7 +3,6 @@ import Products from "../Products";
 import "./MainContent.css";
 
 function MainContent() {
-  console.log("sad");
   return (
     <div className="main__container">
       <div className="welcome">

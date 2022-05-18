@@ -5,8 +5,8 @@
 .photo__container .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .photo__container .grid img {
@@ -16,8 +16,8 @@
   -ms-grid-column-span: 7;
   grid-column: 1 / 8;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
