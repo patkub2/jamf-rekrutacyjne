@@ -1,17 +1,16 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Products from "../Products";
 
-import { increment, State } from "../../redux/Counter";
+import { increment } from "../../redux/Counter";
 import "./MainContent.css";
 
 function MainContent() {
-  const { open } = useSelector<State, any>((state) => state.open);
   const dispatch = useDispatch();
   return (
     <div className="main__container">
       <div className="welcome">
-        <h1>{open}Zadanie rekrutacyjne na staż w Jamf</h1>
+        <h1>Zadanie rekrutacyjne na staż w Jamf</h1>
         <div className="card">
           <p>
             Poniżej wyświetlana jest lista produktów. Twoim zadaniem jest
