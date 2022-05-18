@@ -2,8 +2,11 @@
   // border: 1px solid red; /* BORDER TEST*/
   margin: 5px;
   .img {
-    width: 250px;
-    height: 250px;
+    margin-top: 50px;
+    width: 15vw;
+    height: 15vw;
+    max-width: 280px;
+    max-height: 280px;
     object-fit: cover;
   }
   .price {

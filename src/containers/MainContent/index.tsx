@@ -23,7 +23,7 @@ function MainContent() {
             onClick={() => dispatch(increment(true))}
           >
             {" "}
-            Dodaj produkt
+            Dodaj nowy produkt
           </button>
         </div>
       </div>

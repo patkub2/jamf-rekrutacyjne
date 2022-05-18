@@ -1,5 +1,6 @@
 import React from "react";
 import BurgerMenu from "../components/BurgerMenu";
+import Footer from "../containers/Footer";
 import MainContent from "../containers/MainContent";
 import MainPhoto from "../containers/MainPhoto";
 
@@ -15,6 +16,7 @@ function Main() {
         <NavBar />
         <MainPhoto />
         <MainContent />
+        <Footer />
       </div>
     </>
   );

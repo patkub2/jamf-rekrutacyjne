@@ -51,11 +51,13 @@
 }
 
 .form__button {
-  padding: 10px;
+  padding: 12px 20px;
   background-color: #c4c4c4;
   border: 0px;
   width: auto;
   font: inherit;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
 }
 /*# sourceMappingURL=AddProductForm.css.map */
