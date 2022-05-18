@@ -11,45 +11,61 @@ function AddProductForm() {
   const [img, setImg] = useState("");
 
   return (
-    <div className="navbar">
-      <div className="addProduct">
+    <div className="form__container">
+      <div className="form__title">Dodawanie produktu</div>
+
+      <div className="form__element">
+        <span>Nazwa produktu</span>
+        <span className="required">Pole wymagane</span>
+
         <input
+          className="form__input"
           type="text"
-          placeholder="Name..."
           onChange={(event) => {
             setName(event.target.value);
           }}
         />
+      </div>
+      <div className="form__element">
+        <span>Cena produktu</span>
+        <span className="required">Pole wymagane</span>
+
         <input
+          className="form__input"
           type="number"
-          placeholder="Price..."
           onChange={(event) => {
             setPrice(event.target.value);
           }}
         />
+      </div>
+      <div className="form__element">
+        <span>Adres URL obrazka</span>
+        <span className="required">Pole wymagane</span>
+
         <input
+          className="form__input"
           type="text"
-          placeholder="Img..."
           onChange={(event) => {
             setImg(event.target.value);
           }}
         />
-        <button
-          type="button"
-          onClick={() => {
-            dispatch(
-              addProduct({
-                name,
-                price,
-                img,
-              })
-            );
-          }}
-        >
-          {" "}
-          Add Product
-        </button>
       </div>
+      <button
+        className="form__button"
+        type="button"
+        onClick={() => {
+          dispatch(
+            addProduct({
+              name,
+              price,
+              img,
+            })
+          );
+        }}
+      >
+        {" "}
+        Dodaj produkt
+      </button>
     </div>
   );
 }

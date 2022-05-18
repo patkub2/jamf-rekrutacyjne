@@ -16,7 +16,7 @@ function NavBar() {
       <Menu
         noOverlay
         right
-        width="40%"
+        width="640px"
         isOpen={menuOpenState}
         onOpen={() => setMenuOpenState(true)}
         onClose={() => setMenuOpenState(false)}

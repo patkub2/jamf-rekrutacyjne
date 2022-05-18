@@ -1,5 +1,61 @@
-.navbaras {
-  border: 1px solid red;
+.form__container {
   /* BORDER TEST*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+}
+
+.form__input {
+  background: #ffffff;
+  border: 1px solid #888888;
+  width: 100%;
+  height: 56px;
+}
+
+.form__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.form__element {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.form__element .required {
+  color: #a5a5a5;
+  font-size: 14px;
+}
+
+.form__button {
+  padding: 10px;
+  background-color: #c4c4c4;
+  border: 0px;
+  width: auto;
+  font: inherit;
+  cursor: pointer;
 }
 /*# sourceMappingURL=AddProductForm.css.map */
