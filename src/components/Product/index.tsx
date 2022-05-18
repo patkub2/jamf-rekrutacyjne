@@ -10,10 +10,10 @@ type Props = {
 function Product(props: Props) {
   const { name, price, img } = props;
   return (
-    <div>
-      <h1> {name}</h1>
-      <h1> {price}</h1>
+    <div className="product__container">
       <img className="img" src={img} alt={name} />
+      <h4 className="name"> {name}</h4>
+      <h5 className="price"> {price} zł</h5>
     </div>
   );
 }

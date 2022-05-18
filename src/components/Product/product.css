@@ -1,10 +1,25 @@
-.navbar {
-  border: 1px solid red;
-  /* BORDER TEST*/
+.product__container {
+  margin: 5px;
 }
 
-.img {
-  width: 100px;
-  height: 100px;
+.product__container .img {
+  width: 280px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__container .price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product__container .name {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
 }
 /*# sourceMappingURL=product.css.map */

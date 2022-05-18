@@ -2,13 +2,13 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { State } from "../../redux/Products";
 import Product from "../../components/Product";
-import "./Users.css";
+import "./Products.css";
 
-function Users() {
+function Products() {
   const products = useSelector<State, State[]>((state) => state.products.value);
 
   return (
-    <div className="displayUsers">
+    <div className="displayProducts">
       {products.map((product) => {
         return (
           <Product
@@ -21,4 +21,4 @@ function Users() {
     </div>
   );
 }
-export default Users;
+export default Products;

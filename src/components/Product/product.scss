@@ -1,7 +1,23 @@
-.navbar {
-  border: 1px solid red; /* BORDER TEST*/
-}
-.img {
-  width: 100px;
-  height: 100px;
+.product__container {
+  // border: 1px solid red; /* BORDER TEST*/
+  margin: 5px;
+  .img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
+  .price {
+    // border: 1px solid green; /* BORDER TEST*/
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .name {
+    // border: 1px solid pink; /* BORDER TEST*/
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

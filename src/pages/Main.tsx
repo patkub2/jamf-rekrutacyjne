@@ -1,4 +1,5 @@
 import React from "react";
+import MainContent from "../containers/MainContent";
 import MainPhoto from "../containers/MainPhoto";
 
 import NavBar from "../containers/NavBar";
@@ -10,6 +11,7 @@ function Main() {
     <div className="container">
       <NavBar />
       <MainPhoto />
+      <MainContent />
     </div>
   );
 }

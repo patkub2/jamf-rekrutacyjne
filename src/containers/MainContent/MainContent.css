@@ -1,0 +1,35 @@
+.main__container {
+  width: 49.5%;
+}
+
+.main__container .welcome {
+  padding: 0 20px;
+}
+
+.main__container .welcome h1 {
+  margin: 100px 0px;
+  font-family: "Antonio";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+}
+
+.main__container .welcome h1 p {
+  line-height: 0px;
+}
+
+.main__container .welcome .card {
+  position: relative;
+  padding: 60px;
+  left: -60px;
+  background-color: white;
+}
+
+.main__container .apple {
+  padding: 0 0 0 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+}
+/*# sourceMappingURL=MainContent.css.map */
