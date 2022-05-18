@@ -1,41 +1,28 @@
-import React, { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
-import AddProductForm from "../../components/AddProductForm";
+import React from "react";
+
+import { useDispatch } from "react-redux";
+import { increment } from "../../redux/Counter";
 
 import "./NavBar.css";
 import jamflogo from "../../assets/jamf-logo.png";
 import plusicon from "../../assets/plusicon.png";
 
 function NavBar() {
-  const [menuOpenState, setMenuOpenState] = useState(false);
+  const dispatch = useDispatch();
 
   // const Close = () => setMenuOpenState(false);
 
   return (
-    <>
-      <Menu
-        noOverlay
-        right
-        width="640px"
-        isOpen={menuOpenState}
-        onOpen={() => setMenuOpenState(true)}
-        onClose={() => setMenuOpenState(false)}
-        customBurgerIcon={false}
+    <div className="navbar">
+      <img src={jamflogo} alt="jamflogo" />
+      <button
+        className="button"
+        type="button"
+        onClick={() => dispatch(increment(true))}
       >
-        <AddProductForm />
-      </Menu>
-
-      <div className="navbar">
-        <img src={jamflogo} alt="jamflogo" />
-        <button
-          className="button"
-          type="button"
-          onClick={() => setMenuOpenState(true)}
-        >
-          Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
-        </button>
-      </div>
-    </>
+        Dodaj nowy produkt <img src={plusicon} alt="jamflogo" />
+      </button>
+    </div>
   );
 }
 

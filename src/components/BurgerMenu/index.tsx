@@ -1,32 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import { useDispatch, useSelector } from "react-redux";
+import { increment, State } from "../../redux/Counter";
+
 import AddProductForm from "../AddProductForm";
 
 import "./BurgerMenu.css";
 
 function BurgerMenu() {
-  const [menuOpenState, setMenuOpenState] = useState(false);
+  const { open } = useSelector<State, any>((state) => state.open);
+  const dispatch = useDispatch();
 
   // const Close = () => setMenuOpenState(false);
 
   return (
-    <>
-      <Menu
-        right
-        width="40%"
-        isOpen={menuOpenState}
-        onOpen={() => setMenuOpenState(true)}
-        onClose={() => setMenuOpenState(false)}
-        customBurgerIcon={false}
-      >
-        <AddProductForm />
-      </Menu>
-      <div className="navbar">
-        <button type="button" onClick={() => setMenuOpenState(true)}>
-          Dodaj nowy produkt
-        </button>
-      </div>
-    </>
+    <Menu
+      right
+      width="640px"
+      isOpen={open}
+      onOpen={() => dispatch(increment(true))}
+      onClose={() => dispatch(increment(false))}
+      customBurgerIcon={false}
+    >
+      <AddProductForm />
+    </Menu>
   );
 }
 

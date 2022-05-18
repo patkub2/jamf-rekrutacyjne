@@ -1,4 +1,5 @@
 import React from "react";
+import BurgerMenu from "../components/BurgerMenu";
 import MainContent from "../containers/MainContent";
 import MainPhoto from "../containers/MainPhoto";
 
@@ -8,11 +9,14 @@ import "./styles.css";
 
 function Main() {
   return (
-    <div className="container">
-      <NavBar />
-      <MainPhoto />
-      <MainContent />
-    </div>
+    <>
+      <BurgerMenu />
+      <div className="container">
+        <NavBar />
+        <MainPhoto />
+        <MainContent />
+      </div>
+    </>
   );
 }
 
